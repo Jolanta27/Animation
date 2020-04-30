@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans|Roboto&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    outline:0;
+}
+.container {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    background-color: cadetblue;
+}
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1.2rem;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.red {
+    color: yellow;
+}
+.sub {
+    margin: 25px 0;
+    transform: rotate(-1deg) skewX(-10deg);
+    font-size: 4rem;
+    text-shadow: 3px 1px yellow;
+    font-family: 'open sans', sans-serif;
+}
+.sub span:nth-child(1){
+    position:relative;
+    bottom:-200px;
+    animation: text 2s;
+    animation-iteration-count:infinite;
+}
+.sub span:nth-child(2){
+    position:relative;
+    bottom:-200px;
+    animation: text 2s;
+    animation-iteration-count:infinite;
+    animation-delay: 250ms;
+}
+.sub span:nth-child(3){
+    position:relative;
+    bottom:-200px;
+    animation: text 2s;
+    animation-iteration-count:infinite;
+    animation-delay: 500ms;
+}
+@keyframes text {
+    0% {
+        bottom: -200px;
+    }
+    60% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -200px;
+    }
+}
